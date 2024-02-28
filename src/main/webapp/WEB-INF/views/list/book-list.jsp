@@ -27,7 +27,7 @@
                 <td width="5%"><b>번호</b></td>
                 <td width="30%"><b>제목</b></td>
                 <td width="20%"><b>저자</b></td>
-                <td width="10%"><b>대출 상태</b></td>
+                <td width="10%"><b>상태</b></td>
                 <td width="10%"><b>대출하기</b></td>
             </tr>
             <c:forEach var="book" items="${bookList}" >
@@ -39,7 +39,7 @@
                     <c:choose>
                         <c:when test="${book.availability eq'true'}">
                         <td>대출가능</td>
-                            <td> <form action="/library/loan" method="GET">
+                            <td> <form action="/library/loan" method="POST">
                                 <input type="submit" name="button"  value=대출>
                                 <input type="hidden"  name="book_num" value=${book.book_num} >
                             </form></td>

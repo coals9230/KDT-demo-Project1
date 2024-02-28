@@ -26,4 +26,9 @@ public class LoanService {
     public void saveLoan(String id, int book_num, String book_name, String author) {
         loanMapper.save(id, book_num,book_name,author);
     }
+
+    // 반납
+    public void saveReturn(int book_num) {
+        loanMapper.delete(book_num);
+    }
 }

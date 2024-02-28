@@ -16,7 +16,7 @@
 </head>
 <body>
     <div style="overflow:auto;" class="container" align="center">
-        <h1>대출 관리 페이지</h1>
+        <h1>대출 관리 페이지</h1> <br>
         <a href="/library/list">| 도서 목록 페이지로 이동 |</a> <br><br><br>
         대출한 도서 목록 <br><br>
 
@@ -38,7 +38,7 @@
                     <td>${loan.loan_start_date}+7일...</td>
 
                     <!-- 반납 버튼 ~처리 로직 불러오기-->
-                    <td> <form action="" method="GET">
+                    <td> <form action="/library/return" method="GET">
                          <input type="submit"  value=반납>
                         <input type="hidden"  name="book_num" value=${loan.book_num} >
                             </form></td>
