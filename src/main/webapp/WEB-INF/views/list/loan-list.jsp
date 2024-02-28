@@ -38,7 +38,7 @@
                     <td>${loan.loan_start_date}+7일...</td>
 
                     <!-- 반납 버튼 ~처리 로직 불러오기-->
-                    <td> <form action="/library/return" method="GET">
+                    <td> <form action="/library/return" method="POST">
                          <input type="submit"  value=반납>
                         <input type="hidden"  name="book_num" value=${loan.book_num} >
                             </form></td>

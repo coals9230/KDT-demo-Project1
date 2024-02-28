@@ -51,7 +51,7 @@ public class LoanController {
         return "/list/loan-list";
     }
 
-    @GetMapping("/return")
+    @PostMapping("/return")
     public String  returnBook(@RequestParam int book_num, Model model) {
         String id="testid";
 
