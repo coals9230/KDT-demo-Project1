@@ -16,6 +16,7 @@
 
     <div style="overflow:auto;" class="container" align="center">
         <h1>도서 목록 페이지</h1> <br>
+        <a href="/library/loanlist">| 도서 대출 관리 페이지로 이동 |</a> <br><br><br>
             <form action="/library/search" method="POST">
                 도서 검색  &nbsp&nbsp&nbsp <input type="text" name="keyword" value=${keyword} >
             </form>
@@ -38,7 +39,7 @@
                     <c:choose>
                         <c:when test="${book.availability eq'true'}">
                         <td>대출가능</td>
-                            <td> <form action="/library/loan" method="POST">
+                            <td> <form action="/library/loan" method="GET">
                                 <input type="submit" name="button"  value=대출>
                                 <input type="hidden"  name="book_num" value=${book.book_num} >
                             </form></td>

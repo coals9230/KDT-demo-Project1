@@ -22,7 +22,7 @@
 
         <table border="1" width="1000px" heigth="100px" style="table-layout:fixed">
             <tr align="center" >
-                <td width="5%"><b>도서번호</b></td>
+                <td width="7%"><b>도서번호</b></td>
                 <td width="30%"><b>제목</b></td>
                 <td width="20%"><b>저자</b></td>
                 <td width="15%"><b>대출 시작일</b></td>
