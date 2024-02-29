@@ -5,8 +5,8 @@ spring:
       suffix: .jsp
   datasource:
     url: jdbc:mysql://192.168.56.202:6666/library
-    username: root
-    password: mysql
+    username: kimyebeen
+    password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 mybatis:
