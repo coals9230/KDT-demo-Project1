@@ -4,7 +4,7 @@ spring:
       prefix: /WEB-INF/views/
       suffix: .jsp
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/library
+    url: jdbc:mysql://192.168.56.202:6666/library
     username: root
     password: mysql
     driver-class-name: com.mysql.cj.jdbc.Driver
