@@ -15,7 +15,7 @@ import java.util.List;
 public class ListController {
     private final BookService bookService;
 
-    @GetMapping("/list")   // http://localhost:8080/book/list  => book-list.jsp 파일 불러옴
+    @GetMapping("/list")   // http://localhost:8080/library/list  => book-list.jsp 파일 불러옴
     public String bookList(Model model) {
         List<Book> bookList= bookService.getBookList();
         model.addAttribute("bookList", bookList);
